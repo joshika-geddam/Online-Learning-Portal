@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>bottom</title>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    /* The image used */
+    background-image: url("images/i.gif");
+
+    /* Full height */
+    height: 50%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 4px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+     
+	position:fixed;
+	bottom:10 px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.roe{
+   
+    padding: 10px;
+    width: 600px;
+    height: 100px;
+    text-align: justify;
+	text-indent:90px;
+	font-size:large;
+ }
+</style>
+</head>
+
+<body>
+<marquee scrolldelay=5 scrollamount="10">
+<bottom>
+  <div class="row">
+  <div class="column">
+        <a href="#!">
+          <img src="images/c.jpg" alt="Project" height=150 width=300 hspace="120">
+        </a>
+		</div>
+      <div class="column">
+          <a href="#!">
+          <img src="images/cloud.jpg" alt="Project" height=150 width=300 hspace="120">
+          </a>
+		  </div>
+		  
+		  <div class="column">
+          <a href="#!">
+          <img src="images/fluid.jpg" alt="Project" height=150 width=300  hspace="120">
+         </a>
+		  
+      </div>
+	  </div>
+	  </marquee>
+	 
+	  
+</bottom>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function thank()
+    {
+        alert("your feedback has been successfull inserted ");
+       
+    }
+     //window.location.href="sample.html";
+    </script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+body{
+    background-image: url("6.jpg");
+    background-repeat: no-repeat;
+    background-size: 1370px 770px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=text]
+{
+   width: 10%;
+    padding: 12px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+ 
+
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+    
+
+<div class="container">
+ <form action="feed.jsp" method="get">
+<center><h3>Feedback Form</h3></center>
+    <label for="fname">First Name</label>
+    <input type="text"  name="firstname" placeholder="Your name..">
+
+    <label for="lname">e-mail</label>
+    <input type="text" name="email" placeholder="Your email..">
+
+
+		<br>
+
+    <label for="message">Message</label>
+    <textarea  name="message" placeholder="Write your message..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="thank()">
+  </form>
+</div>
+
+</body>
+</html>
